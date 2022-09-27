@@ -1,7 +1,7 @@
 dt_my_sprint_tenant:
     - name: "dt_my_sprint_tenant"
-    - env-url: "https://yub80465.sprint.dynatracelabs.com/"
-    - env-token-name: "MONACO_SPRINT_TOKEN"
+    - env-url: "https://<your_dt_domain>/"
+    - env-token-name: "MONACO_TOKEN" # as set in the environment variable
 
 # dt_second_tenant_or_env:
 #    - name: "dt_second_tenant_or_env"
