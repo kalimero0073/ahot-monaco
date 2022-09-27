@@ -1,5 +1,5 @@
-dt_my_sprint_tenant:
-    - name: "dt_my_sprint_tenant"
+<choose_a_name>:
+    - name: "<choose_a_name>"
     - env-url: "https://<your_dt_domain>/"
     - env-token-name: "MONACO_TOKEN" # as set in the environment variable
 
