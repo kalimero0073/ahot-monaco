@@ -1,0 +1,9 @@
+dt_my_sprint_tenant:
+    - name: "dt_my_sprint_tenant"
+    - env-url: "https://yub80465.sprint.dynatracelabs.com/"
+    - env-token-name: "MONACO_SPRINT_TOKEN"
+
+# dt_second_tenant_or_env:
+#    - name: "dt_second_tenant_or_env"
+#    - env-url: "https://<URL>"
+#    - env-token-name: "<MONACO_SECOND_TOKEN_ENV_VAR>"
