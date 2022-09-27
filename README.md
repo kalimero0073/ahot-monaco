@@ -11,3 +11,5 @@ Path: e.g. "C:\Tools", assuming the monaco.exe is placed in this path
 
 NEW_CLI: "1", to activate the new cli
 
+MONACO_TOKEN: your token
+
