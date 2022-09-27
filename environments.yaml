@@ -3,7 +3,7 @@
     - env-url: "https://<your_dt_domain>/"
     - env-token-name: "MONACO_TOKEN" # as set in the environment variable
 
-# dt_second_tenant_or_env:
-#    - name: "dt_second_tenant_or_env"
-#    - env-url: "https://<URL>"
-#    - env-token-name: "<MONACO_SECOND_TOKEN_ENV_VAR>"
+# <choose_a_2nd_name>:
+#    - name: "<choose_a_2nd_name>"
+#    - env-url: "https://<your_2nd_dt_domain>"
+#    - env-token-name: "<MONACO_SECOND_TOKEN>"
