@@ -1,0 +1,8 @@
+delete:
+## basic setup
+ - "synthetic-monitor/google.com"
+ - "maintenance-window/MwAndReference"
+ - "management-zone/LinuxMachines"
+ - "dashboard/MonacoGeneralDashboard"
+# dummy value for passing yaml validation
+ - "synthetic-monitor/gibberish.com"

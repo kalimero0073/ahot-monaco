@@ -1,0 +1,27 @@
+{
+ "description": "All Linux hosts",
+ "dimensionalRules": [],
+ "entitySelectorBasedRules": [],
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "negate": false,
+      "operator": "EQUALS",
+      "type": "OS_TYPE",
+      "value": "LINUX"
+     },
+     "key": {
+      "attribute": "HOST_OS_TYPE",
+      "type": "STATIC"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [],
+   "type": "HOST"
+  }
+ ]
+}

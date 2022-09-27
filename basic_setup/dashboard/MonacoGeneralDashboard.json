@@ -1,0 +1,150 @@
+{
+ "dashboardMetadata": {
+  "dashboardFilter": null,
+  "hasConsistentColors": false,
+  "name": "MonacoGeneralDashboard",
+  "owner": "kale.lazic@dynatrace.com",
+  "popularity": 10,
+  "shared": true,
+  "tilesNameSize": null
+ },
+ "metadata": {
+  "clusterVersion": "1.246.185.20220801-112023",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "tiles": [
+  {
+   "bounds": {
+    "height": 304,
+    "left": 0,
+    "top": 0,
+    "width": 304
+   },
+   "configured": true,
+   "customName": "Data explorer results",
+   "metricExpressions": [
+    "resolution=30m\u0026(builtin:billing.synthetic.requests:splitBy():sort(value(auto,descending)):limit(100)):limit(100):names"
+   ],
+   "name": "Synthetic Request Count",
+   "nameSize": null,
+   "queries": [
+    {
+     "enabled": true,
+     "filterBy": {
+      "criteria": [],
+      "entityAttribute": null,
+      "filter": null,
+      "filterOperator": null,
+      "filterType": null,
+      "globalEntity": null,
+      "nestedFilters": [],
+      "relationship": null
+     },
+     "foldTransformation": null,
+     "generatedMetricSelector": null,
+     "id": "A",
+     "limit": 100,
+     "metric": "builtin:billing.synthetic.requests",
+     "metricSelector": null,
+     "sortBy": "DESC",
+     "spaceAggregation": null,
+     "splitBy": [],
+     "timeAggregation": "DEFAULT"
+    }
+   ],
+   "queriesSettings": {
+    "foldAggregation": null,
+    "foldTransformation": null,
+    "resolution": "30m"
+   },
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATA_EXPLORER",
+   "visualConfig": {
+    "axes": {
+     "xAxis": {
+      "displayName": "",
+      "visible": true
+     },
+     "yAxes": [
+      {
+       "defaultAxis": true,
+       "displayName": "",
+       "max": "AUTO",
+       "min": "AUTO",
+       "position": "LEFT",
+       "queryIds": [
+        "A"
+       ],
+       "visible": true
+      }
+     ]
+    },
+    "global": {
+     "hasTrendline": null,
+     "hideLegend": false,
+     "seriesType": null,
+     "theme": null,
+     "threshold": null
+    },
+    "graphChartSettings": {
+     "connectNulls": false
+    },
+    "heatmapSettings": {
+     "xAxisBuckets": null,
+     "yAxis": "VALUE",
+     "yAxisBuckets": null
+    },
+    "honeycombSettings": {
+     "showHive": true,
+     "showLabels": false,
+     "showLegend": true
+    },
+    "rules": [
+     {
+      "matcher": "A:",
+      "properties": {
+       "alias": null,
+       "color": "DEFAULT",
+       "seriesType": null
+      },
+      "seriesOverrides": [],
+      "unitTransform": null,
+      "valueFormat": null
+     }
+    ],
+    "singleValueSettings": null,
+    "tableSettings": {
+     "isThresholdBackgroundAppliedToCell": false
+    },
+    "thresholds": [
+     {
+      "axisTarget": "LEFT",
+      "columnId": null,
+      "queryId": "",
+      "rules": [
+       {
+        "color": "#7dc540",
+        "value": null
+       },
+       {
+        "color": "#f5d30f",
+        "value": null
+       },
+       {
+        "color": "#dc172a",
+        "value": null
+       }
+      ],
+      "visible": true
+     }
+    ],
+    "type": "GRAPH_CHART"
+   }
+  }
+ ]
+}

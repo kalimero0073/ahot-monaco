@@ -1,0 +1,4 @@
+config:
+- MonacoGeneralDashboard: MonacoGeneralDashboard.json
+MonacoGeneralDashboard:
+- name: MonacoGeneralDashboard

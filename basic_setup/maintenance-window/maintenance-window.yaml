@@ -1,0 +1,5 @@
+config:
+- MwAndReference: MwAndReference.json
+MwAndReference:
+- name: MwAndReference
+- managementZoneId: "basic_setup/management-zone/LinuxMachines.id"

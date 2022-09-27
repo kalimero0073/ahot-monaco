@@ -1,0 +1,31 @@
+{
+    "description": "",
+    "enabled": true,
+    "metadata": {
+     "clusterVersion": "1.246.185.20220801-112023",
+     "configurationVersions": [
+      0
+     ]
+    },
+    "name": "{{.name}}",
+    "schedule": {
+     "end": "2022-10-14 17:25",
+     "recurrenceType": "ONCE",
+     "start": "2022-09-26 16:25",
+     "zoneId": "UTC"
+    },
+    "scope": {
+     "entities": [],
+     "matches": [
+      {
+        "mzId": "{{ .managementZoneId }}",
+        "tagCombination": "AND",
+        "tags": [],
+        "type": null
+      }
+     ]
+    },
+    "suppressSyntheticMonitorsExecution": false,
+    "suppression": "DETECT_PROBLEMS_AND_ALERT",
+    "type": "PLANNED"
+   }

@@ -1,0 +1,5 @@
+config:
+- httpgoogle: httpgoogle.json
+httpgoogle:
+- name: google.com
+- locations: '"GEOLOCATION-0A41430434C388A9", "GEOLOCATION-0DF9A0E1095A5A62"'

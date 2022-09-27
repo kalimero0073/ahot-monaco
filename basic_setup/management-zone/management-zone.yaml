@@ -1,0 +1,6 @@
+config:
+- LinuxMachines: LinuxMachines.json
+
+LinuxMachines:
+- name: LinuxMachines
+

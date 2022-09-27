@@ -1,0 +1,57 @@
+{
+    "anomalyDetection": {
+     "loadingTimeThresholds": {
+      "enabled": true,
+      "thresholds": []
+     },
+     "outageHandling": {
+      "globalOutage": true,
+      "globalOutagePolicy": {
+       "consecutiveRuns": 1
+      },
+      "localOutage": false,
+      "localOutagePolicy": {
+       "affectedLocations": null,
+       "consecutiveRuns": null
+      }
+     }
+    },
+    "automaticallyAssignedApps": [],
+    "enabled": true,
+    "frequencyMin": 1,
+    "locations": [ {{.locations}} ],
+    "managementZones": [],
+    "manuallyAssignedApps": [],
+    "name": "{{.name}}",
+    "requests": [
+     {
+      "name": "google.com/",
+      "sequenceNumber": 1
+     }
+    ],
+    "script": {
+     "requests": [
+      {
+       "configuration": {
+        "acceptAnyCertificate": true,
+        "followRedirects": true
+       },
+       "description": "google.com/",
+       "method": "GET",
+       "url": "https://www.google.com/",
+       "validation": {
+        "rules": [
+         {
+          "passIfFound": false,
+          "type": "httpStatusesList",
+          "value": "\u003e=400"
+         }
+        ]
+       }
+      }
+     ],
+     "version": "1.0"
+    },
+    "tags": [],
+    "type": "HTTP"
+   }
